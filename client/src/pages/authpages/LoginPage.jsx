@@ -129,7 +129,6 @@ const LoginPage = () => {
                   >
                     Login
                   </button>
-                  <OAuth />{" "}
                 </div>
               </div>
             </form>

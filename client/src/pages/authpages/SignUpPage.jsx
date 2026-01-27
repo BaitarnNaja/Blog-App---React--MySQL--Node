@@ -160,7 +160,6 @@ const SignUpPage = () => {
                   >
                     Signup
                   </button>
-                  <OAuth />
                 </div>
               </div>
             </form>
