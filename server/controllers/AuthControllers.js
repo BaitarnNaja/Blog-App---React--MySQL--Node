@@ -167,7 +167,7 @@ const LogIn = async (req, res) => {
 //checks if the user have a token set then deletes the cookie called token from the user and sends a success code and message
 const LogOut = (req, res) => {
   //retrive cookie called token from req.cookie
-  const CheckCookieExists = ture;
+  const CheckCookieExists = req.cookies.token;
 
   //check if the retrival was successful
   if (!CheckCookieExists) {
