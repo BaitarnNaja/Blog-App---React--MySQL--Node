@@ -26,7 +26,7 @@ const cors = require("cors");
 //using cors with changing config which will only allow resource sharing with the frontend
 app.use(
   cors({
-    origin: "http://192.168.1.8", // client origin
+    origin: "http://192.168.1.8:5173", // client origin
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization",
     credentials: true // for sending cookies and HTTP authentication information
