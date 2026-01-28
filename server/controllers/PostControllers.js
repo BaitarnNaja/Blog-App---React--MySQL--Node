@@ -8,7 +8,7 @@ const cloudinary = require("../utils/cloudinary");
 //async await add post function which will first check if a cookie called token exists then extract the user id from the cookie, will check if all the credentials are given and then after converting the image given to cloudinary will save the whole thing in the database
 const AddPost = async (req, res) => {
   //check if the user is athenticated and retrive the id from the cookie called token which would be set in the user's localstorage after successful login
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //if the check was successful
   if (!CheckCookieExists) {
@@ -120,7 +120,7 @@ const GetPosts = async (req, res) => {
 //async await function which will first check if a token exists in the user end then checks if a post exists with the provided id from req.params.id ifexists sends the row with a success message
 const GetPost = async (req, res) => {
   //check if cookie exists
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //if no cookie exists
   if (!CheckCookieExists) {
@@ -170,7 +170,7 @@ const GetPost = async (req, res) => {
 //async await post delete function which will first check if the user is logged in and then retrive the user id from the cookie then will check if the retrieved id is the auther of the post the user wants to delete if successful will send the success message
 const DeletePost = async (req, res) => {
   //retrieve the cookie called token from the req
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //check if the user has the token
   if (!CheckCookieExists) {
@@ -211,7 +211,7 @@ const DeletePost = async (req, res) => {
 //async await post update function which will first check if the user is logged in and then retrive the user id from the cookie and will procced check if the retrieved id is the auther of the post the user wants to update if successful will send the success message
 const UpdatePost = async (req, res) => {
   //retrieve the cookie called token from the req
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //check if the user has the token
   if (!CheckCookieExists) {

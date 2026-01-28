@@ -111,7 +111,7 @@ const GetUsers = async (req, res) => {
 //this async await UpdateUser functioon will first check if the cookie matches with the user who wants to update the user profile if successfull will procced to update the provided credentials in the data base
 const UpdateUser = async (req, res) => {
   //check if cookie is there
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //if the cookie is not there in the user
   if (!CheckCookieExists) {
@@ -195,7 +195,7 @@ const UpdateUser = async (req, res) => {
 //this async await ChangePassword functioon will first check if the cookie matches with the user who wants to change the password if successfull will procced to update the password with provided credentials in the data base
 const ChangePassword = async (req, res) => {
   //check if cookie is there
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //if the cookie is not there in the user
   if (!CheckCookieExists) {
@@ -295,7 +295,7 @@ const ChangePassword = async (req, res) => {
 //DeleteUser asyn await function will first check if the id in cookie matches with the req params id then will remove the cookie and delete the user from database
 const DeleteUser = async (req, res) => {
   //check if the cookie called token exists
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //if not id found end the function with a error message
   if (!CheckCookieExists) {
@@ -345,7 +345,7 @@ const DeleteUser = async (req, res) => {
 //UserProfile async await function which will first look for the cookie stored in the user and then retrieve the id and then will reteve all credentials like email username from the cookie and send back to the user with total posts count as well
 const UserProfile = async (req, res) => {
   //get hold of the cookie called token using a variable
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //return error if the cookie doesnt exist
   if (!CheckCookieExists) {

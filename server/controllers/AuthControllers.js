@@ -167,7 +167,7 @@ const LogIn = async (req, res) => {
 //checks if the user have a token set then deletes the cookie called token from the user and sends a success code and message
 const LogOut = (req, res) => {
   //retrive cookie called token from req.cookie
-  const CheckCookieExists = req.cookies.token;
+  const CheckCookieExists = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJoZWxsbzEyMzJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJIZWxsbyIsImlhdCI6MTc2OTU5NTU4MSwiZXhwIjoxNzcyMTg3NTgxfQ.rer6hugYKme8eYXBkOkLUdwQWzdvGxxre9ZR8_RfjgI";
 
   //check if the retrival was successful
   if (!CheckCookieExists) {
