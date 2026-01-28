@@ -56,7 +56,7 @@ app.use(bodyParser.json());
   app.use("/user", UserRoutes);
 
   //listening the app at environemental variable specfified port
-  app.listen(port, () => {
-    console.log(`App Running Successfully On http://localhost:${port}`);
+  app.listen(port,'0.0.0.0' ,() => {
+    console.log(`App Running Successfully On http://'0.0.0.0':${port}`);
   });
 })();
