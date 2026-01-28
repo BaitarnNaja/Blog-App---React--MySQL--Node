@@ -33,7 +33,7 @@ const SignUpPage = () => {
 
     //after all checks continue with the sign up by sending a post request to the server using axios with the provided credentials in a try catch block for better readability and maintainibility of our code
     try {
-      const res = await axios.post("http://localhost:5000/auth/signup", {
+      const res = await axios.post("http://192.168.1.9:5000/auth/signup", {
         email: email,
         username: username,
         password: password,

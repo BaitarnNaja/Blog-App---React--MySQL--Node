@@ -27,7 +27,7 @@ const OAuth = () => {
 
       //using axios for sending the created account's email
       const res = await axios.post(
-        "http://localhost:5000/auth/google",
+        "http://192.168.1.9:5000/auth/google",
         {
           email: resultsFromGoogle.user.email
         },

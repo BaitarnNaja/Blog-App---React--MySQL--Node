@@ -40,7 +40,7 @@ const CreatePost = () => {
 
       // Send the form data using Axios
       const res = await axios.post(
-        "http://localhost:5000/post/addpost",
+        "http://192.168.1.9:5000/post/addpost",
         formData,
         {
           headers: {

@@ -19,7 +19,7 @@ const DeleteUser = () => {
     //using try catch blocks for better maintainability and readability of code
     try {
       //send a await axios post for sending a post request
-      const res = await axios.delete("http://localhost:5000/user/deleteuser", {
+      const res = await axios.delete("http://192.168.1.9:5000/user/deleteuser", {
         withCredentials: true,
       });
 

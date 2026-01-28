@@ -41,7 +41,7 @@ const UpdatePost = () => {
     const FetchPostInfo = async () => {
       //using try catch block for better readability of code
       try {
-        const res = await axios.get(`http://localhost:5000/post/${id}`, {
+        const res = await axios.get(`http://192.168.1.9:5000/post/${id}`, {
           withCredentials: true,
         });
 
@@ -83,7 +83,7 @@ const UpdatePost = () => {
 
       // Send the form data using Axios
       const res = await axios.put(
-        `http://localhost:5000/post/${id}`,
+        `http://192.168.1.9:5000/post/${id}`,
         formData,
         {
           headers: {

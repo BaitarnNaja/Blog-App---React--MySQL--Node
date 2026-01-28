@@ -30,7 +30,7 @@ const UpdateUser = () => {
     try {
       //axios put request in a variable using await keyword
       const res = await axios.put(
-        "http://localhost:5000/user/updateuser",
+        "http://192.168.1.9:5000/user/updateuser",
         {
           email: email,
           username: username,
