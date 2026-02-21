@@ -8,6 +8,7 @@ const ConnDb = async (req, res) => {
     const pool = await mysql.createPool({
       host: process.env.DB_HOST,
       user: process.env.DB_USER,
+      port:3306,
       password: process.env.DB_PASSWORD,
       waitForConnections: process.env.DB_WAITFORCONNECTIONS,
       connectionLimit: process.env.DB_CONENCTIONLIMIT,
