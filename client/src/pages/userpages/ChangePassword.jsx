@@ -27,7 +27,7 @@ const ChangePassword = () => {
     try {
       //sending a axios put request to the server using a variable
       const res = await axios.put(
-        "http://192.168.1.9:5000/user/changepass",
+        "http://192.168.182.129:5000/user/changepass",
         {
           old_password: old_password,
           new_password: new_password,

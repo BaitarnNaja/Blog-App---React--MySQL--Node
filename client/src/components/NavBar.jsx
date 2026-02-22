@@ -43,7 +43,7 @@ const NavBar = () => {
     //try catch blocks for better readability and maintanibility
     try {
       //posting to the server with the id got from the input field
-      const res = await axios.post("http://192.168.1.9:5000/user/searchuser", {
+      const res = await axios.post("http://192.168.182.129:5000/user/searchuser", {
         id: id
       });
 

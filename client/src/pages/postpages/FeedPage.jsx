@@ -62,7 +62,7 @@ const FeedPage = () => {
     const FetchPosts = async () => {
       //using try catch block for this function for better readability and maintainibilty of code
       try {
-        const res = await axios.get("http://192.168.1.9:5000/post/getposts");
+        const res = await axios.get("http://192.168.182.129:5000/post/getposts");
 
         //get access to the data from the axios get request
         const data = res.data;

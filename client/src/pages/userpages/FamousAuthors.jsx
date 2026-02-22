@@ -23,7 +23,7 @@ const FamousAuthors = () => {
       //try catch blocks for better code readability and maintainibilty
       try {
         //sending a get request using axios
-        const res = await axios.get("http://192.168.1.9:5000/user");
+        const res = await axios.get("http://192.168.182.129:5000/user");
 
         //saving the res data in a variable
         const topusersfetcheddata = res.data;

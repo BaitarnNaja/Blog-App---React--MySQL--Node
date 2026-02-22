@@ -29,7 +29,7 @@ const UserProfile = () => {
       //using a try catch block for better readability
       try {
         //send a post request to the server for fetching user profile infoormation
-        const res = await axios.get("http://192.168.1.9:5000/user/userprofile", {
+        const res = await axios.get("http://192.168.182.129:5000/user/userprofile", {
           withCredentials: true,
         });
         const data = res.data;

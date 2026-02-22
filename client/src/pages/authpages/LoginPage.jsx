@@ -34,7 +34,7 @@ const LoginPage = () => {
     //after all checks continue with the logging in the user by sending a post request to the server using axios with the provided credentials in a try catch block for better readability and maintainibility of our code
     try {
       const res = await axios.post(
-        "http://192.168.1.9:5000/auth/login",
+        "http://192.168.182.129:5000/auth/login",
         {
           username: username,
           password: password,
