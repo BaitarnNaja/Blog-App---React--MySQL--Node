@@ -23,7 +23,7 @@ const LogoutConfirm = () => {
     try {
       //send a await axios post for sending a post request
       const res = await axios.post(
-        "http://192.168.182.129:5000/auth/logout",
+        "http://192.168.197.129:5000/auth/logout",
         { "": "" },
         {
           withCredentials: true,

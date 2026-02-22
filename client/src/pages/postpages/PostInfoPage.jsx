@@ -26,7 +26,7 @@ const PostInfoPage = () => {
     const FetchPostInfo = async () => {
       //using try catch block for better readability of code
       try {
-        const res = await axios.get(`http://192.168.182.129:5000/post/${id}`, {
+        const res = await axios.get(`http://192.168.197.129:5000/post/${id}`, {
           withCredentials: true,
         });
 
